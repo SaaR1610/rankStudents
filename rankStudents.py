@@ -1,4 +1,3 @@
-This is Coding
 # Read the names and marks of at least 3 students
 # Rank the top three students with highest marks
 # Give cash rewards. $500 for first rank, $300 for second rank, $100 for third rank. Value cannot be modified
@@ -46,9 +45,11 @@ def rewardStudents(sortedStudentRecord, reward):
     print("{} has received a cash reward of ${}".format(sortedStudentRecord[2][0], reward[2]))
     print()
 
-def lotteryStudents():
-    print("student is receiving a prize")
-    
+def lottery(sortedStudentRecord, reward):
+    print("In Lottery")
+    print("{} is receiving a prize ".format(sortedStudentRecord[2][0], reward[2]))
+    print()
+
 
 def appreciateStudents(sortedStudentRecord):
     print()
@@ -64,4 +65,5 @@ studentRecord = readStudentDetails()
 sortedStudentRecord = rankStudents(studentRecord)
 reward = (500, 300, 100)
 rewardStudents(sortedStudentRecord, reward)
+lottery(sortedStudentRecord, reward)
 appreciateStudents(sortedStudentRecord)
